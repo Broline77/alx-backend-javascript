@@ -7,17 +7,17 @@ interface Student{
 
  // student objects
 const student1: Student = {
-  firstName: 'Aisha',
-  lastName: 'Kay',
+  firstName: 'ken',
+  lastName: 'homer',
   age: 42,
-  location: 'Kisumu',
+  location: 'Nakuru',
 }; 
 
 const student2: Student = {
-	firstName: 'Atesh',
-	lastName: 'Achar',
+	firstName: 'Milka',
+	lastName: 'Salim',
 	age: 50,
-	location: 'Istanbul',
+	location: 'Mombasa',
 }; 
 
 // array of students
