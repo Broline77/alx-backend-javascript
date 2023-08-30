@@ -71,7 +71,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **Run test**
 
 ```bash
-bash:~$ npm test 0-calcul.test.js 
+bob@dylan:~$ npm test 0-calcul.test.js 
 
 > task_0@1.0.0 test /root
 > ./node_modules/mocha/bin/mocha "0-calcul.test.js"
@@ -83,7 +83,7 @@ bash:~$ npm test 0-calcul.test.js
     ...
 
   130 passing (35ms)
-bash:~$ 
+bob@dylan:~$ 
 ```
 Repo:
 
@@ -395,15 +395,15 @@ In a folder ``8-api`` located at the root of the project directory, copy this pa
 
 Terminal 1
 ```bash
-bash:~/8-api$  node api.js
+bob@dylan:~/8-api$  node api.js
 API available on localhost port 7865
 ```
 Terminal 2
 ```bash
-bash:~/8-api$  curl http://localhost:7865 ; echo ""
+bob@dylan:~/8-api$  curl http://localhost:7865 ; echo ""
 Welcome to the payment system
-bash:~/8-api$  
-bash:~/8-api$ npm test api.test.js
+bob@dylan:~/8-api$  
+bob@dylan:~/8-api$ npm test api.test.js
 
 > 8-api@1.0.0 test /root/8-api
 > ./node_modules/mocha/bin/mocha "api.test.js"
@@ -417,7 +417,7 @@ bash:~/8-api$ npm test api.test.js
 
   23 passing (256ms)
 
-bash:~/8-api$
+bob@dylan:~/8-api$
 ```
 
 **Tips:**
@@ -455,15 +455,15 @@ In a folder 9-api, reusing the previous project in 8-api (package.json, api.js a
 
 Terminal 1
 ```bash
-bash:~$ node api.js
+bob@dylan:~$ node api.js
 API available on localhost port 7865
 ```
 Terminal 2
 ```bash
-bash:~$ curl http://localhost:7865/cart/12 ; echo ""
+bob@dylan:~$ curl http://localhost:7865/cart/12 ; echo ""
 Payment methods for cart 12
-bash:~$ 
-bash:~$ curl http://localhost:7865/cart/hello -v
+bob@dylan:~$ 
+bob@dylan:~$ curl http://localhost:7865/cart/hello -v
 *   Trying 127.0.0.1...
 * TCP_NODELAY set
 * Connected to localhost (127.0.0.1) port 7865 (#0)
@@ -492,7 +492,7 @@ bash:~$ curl http://localhost:7865/cart/hello -v
 </body>
 </html>
 * Connection #0 to host localhost left intact
-bash:~$ 
+bob@dylan:~$ 
 ```
 Tips:
 
@@ -533,17 +533,17 @@ In a folder 10-api, reusing the previous project in 9-api (package.json, api.js 
 
 Terminal 1
 ```bash
-bash:~$ node api.js
+bob@dylan:~$ node api.js
 API available on localhost port 7865
 ```
 Terminal 2
 ```bash
-bash:~$ curl http://localhost:7865/available_payments ; echo ""
+bob@dylan:~$ curl http://localhost:7865/available_payments ; echo ""
 {"payment_methods":{"credit_cards":true,"paypal":false}}
-bash:~$ 
-bash:~$ curl -XPOST http://localhost:7865/login -d '{ "userName": "Betty" }' -H 'Content-Type: application/json' ; echo ""
+bob@dylan:~$ 
+bob@dylan:~$ curl -XPOST http://localhost:7865/login -d '{ "userName": "Betty" }' -H 'Content-Type: application/json' ; echo ""
 Welcome Betty
-bash:~$ 
+bob@dylan:~$ 
 ```
 Tips:
 
